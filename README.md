@@ -2,7 +2,7 @@
 
 MESSAGING WEB APPLICATION
 
-The main objective of the project is to manage the details of Chat profile, Chat user, Chat group history.  Some of the other objectives are listed below:-
+The main objective of the project is to manage the details of Chat profile, Chat user, Chat group history. 
 •	Allow user to Sign in with Google account
 •	Create rooms or groups to chat
 •	Show the Last seen for groups
