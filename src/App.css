@@ -1,0 +1,24 @@
+.App{
+ 
+  display: grid;
+  /* whatever child elevent the .App have would be centered */
+  place-items: center;
+  background-color: rgb(215,217,240);
+  /* 1vh = 1% of viewport height. */
+  height: 100vh;
+}
+
+.app_body{
+  display: flex;
+  background-color: rgb(59,63,154);
+  margin: -50px;
+  height: 90vh;
+  width: 90vw;
+  /* box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.6); */
+  color: white;
+  border-radius: 10px 10px 2px 2px;
+
+  
+}
+
+  

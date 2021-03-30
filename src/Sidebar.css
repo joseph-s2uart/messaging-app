@@ -1,0 +1,70 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    /* using 35% of the screen the remaining 65% is used by the chat box */
+    flex:0.35;
+    
+}
+
+.sidebar__search{
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 39px;
+    padding: 10px;
+}
+
+.sidebar__searchContainer{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    width: 100%;
+    height: 39px;
+    padding: 10px;
+}
+.sidebar__searchContainer > .MuiSvgIcon-root {
+    /* to change the color of searh icon */
+    color: gray;
+    padding: 10px;
+}
+.sidebar__searchContainer > input{
+    border: none;
+    /* moving the search bar 10px from the search icon */
+    margin-left: 10px;
+}
+.Sidebar__header{
+    /* to display the incons in aline */
+    display: flex;
+    /*  */
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid white;
+}
+
+.Sidebar__headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+
+.Sidebar__headerRight > .MulSvgIcon-root{
+
+    margin-right: 2vw;
+    /* ! is to overwrite materiall UI font size */
+    font-size: 24px !important;
+}
+
+.Sidebar__chats {
+    /* flex=1 to give colour to the whole */
+    flex:1;
+    background-color: rgb(59,63,154);
+    /* scroll will makes us to scroll throung the names of chants by not allowing the names to be overfloowed from the container */
+    overflow-y: auto;
+    overflow-x: auto;
+
+    
+    
+    
+
+}

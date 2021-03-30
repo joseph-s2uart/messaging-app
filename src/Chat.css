@@ -1,0 +1,112 @@
+.chat{
+    /* using 65% of the screen the remaining 35% is used by the Sidebar */
+    flex:0.65;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.chat__header{
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    
+    
+}
+
+.chat__headerinfo{
+    /* this becomes the main take up all the space */
+    flex: 1;
+    padding-left: 20px;
+}
+
+.chat__headerinfo > h3 {
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.chat__headerinfo > p {
+    color:white;
+}
+
+.chat__message{
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    /* Depending upon the text size the box will fit */
+    width: fit-content;
+    background-color: rgb(215,216,241);
+    /* to give a space between individual messages */
+    margin-bottom: 30px;
+    color: black;
+}
+
+.chat__reciver{
+    margin-left: auto;
+    background-color: rgb(152,154,215);
+    color: white;
+}
+.chat__timestamp{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.chat__name {
+    /* the position is absolute to the chat__message */
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+    color: black;
+
+}
+
+
+.chat__body{
+    /* only on applying flex=1 back image will display */
+    flex:1;
+    /* background-image: url("back.jpg"); */
+    /* even though the screen become huge the back image will cover the whole by repeating itself */
+    /* background-repeat: repeat; */
+    /* background-position: center; */
+    padding: 30px;
+    /* if we have a bunch of text we can scroll through it */
+    background-color:rgb(255,255,255);
+    overflow-y: auto;
+    overflow-x: auto;
+
+}
+
+.chat__fotter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+    background-color: rgb(237,237,250);
+}
+
+.chat__fotter > form {
+    flex:1;
+    display: flex;
+   }
+
+    .chat__fotter > form >input{
+        flex :1;
+        border-radius: 30px;
+        padding: 10px;
+        border: none;
+
+    }
+
+    .chat__fotter > form >button{
+        /* You have the functionality of the submit only by clicking enter from Keyboard */
+        display: none;
+    }
+    .chat__fotter > .MuiSvgIcon-root{
+        padding: 10px;
+        color: gray;
+      
+    }
+ 
